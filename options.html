@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<link rel="icon" href="images/16.png" sizes="16x16" type="img/png"/>
+		<link rel="icon" href="images/48.png" sizes="48x48" type="img/png"/>
+		<link rel="icon" href="images/128.png" sizes="128x128" type="img/png"/>
+		<link type="text/css" rel="stylesheet" href="css/options.css"/>
+		<script type="text/javascript" src="js/localizeOptions.js"></script>
+		<script type="text/javascript" src="js/markDirty.js"></script>
+		<script type="text/javascript" src="js/optionsLoad.js"></script>
+		<script type="text/javascript" src="js/optionsReset.js"></script>
+		<script type="text/javascript" src="js/optionsSave.js"></script>
+	</head>
+	<body onload="localizeOptions();optionsLoad();">
+		<div id="header"><h1><span id="name"></span></h1></div>
+		<div class="section-header first"><span id="optionslabel"></span></div>
+		<table>
+			<tr><td><span id="editorwidthlabel"></span></td><td><input id="editorWidth" type="number" value="660" oninput="markDirty();" /></td></tr>
+			<tr><td><span id="backgroundcolorlabel"></span></td><td><input id="backgroundColor" type="color" value="#000000" oninput="markDirty();" /></td></tr>
+			<tr><td><span id="fontcolorlabel"></td><td><input id="fontColor" type="color" value="#B9B9B9" oninput="markDirty();" /></td></tr>
+			<tr><td><span id="fontfamilylabel"></td><td><select id="fontFamily" onchange="markDirty();"><option id="monospace" Selected>Monospace</option><option id="sansSerif">Sans-Serif</option><option id="serif">Serif</option></select></td></tr>
+			<tr><td><span id="fontsizelabel"></td><td><input id="fontSize" type="text" value="12pt" oninput="markDirty();" /></td></tr>
+			<tr><td><span id="lineheightlabel"></td><td><input id="lineHeight" type="text" value="1.47em" oninput="markDirty();" /></td></tr>
+			<tr><td><span id="displayfooterlabel"></td><td><input id="displayFooter" type="checkbox" onchange="markDirty();" checked /></td></tr>
+		</table>
+		<div id="footer">
+			<button id="save-button" onclick="optionsSave()"></button><button id="reset-button" onclick="optionsReset();"></button>
+			<p id="save-notice"></p>
+		</div>
+	</body>
+</html>

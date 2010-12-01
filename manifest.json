@@ -1,0 +1,17 @@
+{
+	"name": "__MSG_name__",
+	"description": "__MSG_description__",
+	"version": "0.32",
+	"default_locale": "en",
+	"icons": {
+		"16": "img/16.png",
+		"48": "img/48.png",
+		"128": "img/128.png"
+	},
+	"options_page": "options.html",
+	"app": {
+		"launch": {
+			"local_path": "application.html"
+		}
+	}
+}
