@@ -1,5 +1,6 @@
 function optionsSave() {
 	localStorage.setItem("WriteSpaceEditorWidth", document.querySelector("#editorWidth").value);
+	localStorage.setItem("WriteSpaceVerticalPadding", document.querySelector("#verticalPadding").value);
 	localStorage.setItem("WriteSpaceBackgroundColor", document.querySelector("#backgroundColor").value);
 	localStorage.setItem("WriteSpaceFontColor", document.querySelector("#fontColor").value);
 	localStorage.setItem("WriteSpaceFontFamily", document.querySelector("#fontFamily").value);
@@ -10,7 +11,13 @@ function optionsSave() {
 	}
 	else {
 		localStorage.setItem("WriteSpaceDisplayFooter", document.querySelector("#displayFooter").checked);
-	}
-	document.querySelector("#save-button").disabled = true;
-	document.querySelector("#save-notice").style.visibility = "visible";
+	};
+	document.querySelector("#savebutton").disabled = true;
+	var views = chrome.extension.getViews();
+	for (var i in views) {
+		var location = views[i].location;
+		if (location.pathname == "/html/application.html") {
+			location.reload();
+		};
+	};
 };

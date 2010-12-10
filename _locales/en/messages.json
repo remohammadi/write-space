@@ -5,7 +5,9 @@
 	"linecount": {"message": " | Lines: "},
 	"charactercount": {"message": " | Characters: "},
 	"options": {"message": "Options"},
-	"editorwidth": {"message": "Editor Width (in pixels):"},
+	"editorwidth": {"message": "Editor Width:"},
+	"pixels": {"message": "pixels"},
+	"verticalpadding": {"message": "Vertical Padding:"},
 	"backgroundcolor": {"message": "Background Color:"},
 	"fontcolor": {"message": "Font Color:"},
 	"fontfamily": {"message": "Font Family:"},
@@ -15,10 +17,13 @@
 	"fontsize": {"message": "Font Size:"},
 	"lineheight": {"message": "Line Height:"},
 	"displayfooter": {"message": "Show Document Statistics:"},
+	"savenotice": {"message": "If Write Space is open, you will have to refresh it for the changes to take effect."},
 	"save": {"message": "Save"},
 	"resettodefault": {"message": "Reset to Default"},
-	"savenotice": {"message": "If Write Space is open, you will have to refresh it for the changes to take effect."},
 	"importexport": {"message": "Import/Export"},
-	"import": {"message": "Import File:"},
-	"export": {"message": "Export File:"}
+	"import": {"message": "Import:"},
+	"importbutton": {"message": "Import File"},
+	"export": {"message": "Export:"},
+	"exportfilebutton": {"message": "Export to File"},
+	"importwarning": {"message": "Are you sure you want to import the selected file? This will overwrite any data that is currently saved in the Write Space editor."}
 }

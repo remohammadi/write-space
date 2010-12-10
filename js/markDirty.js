@@ -1,3 +1,3 @@
 function markDirty() {
-	document.getElementById("save-button").disabled = false;
-}
+	document.getElementById("savebutton").disabled = false;
+};

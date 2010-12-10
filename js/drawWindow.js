@@ -7,5 +7,5 @@ function drawWindow() {
 	else {
 		document.querySelector("#editor").style.paddingLeft = window.innerWidth / 2 - 660 / 2 + "px";
 		document.querySelector("#editor").style.paddingRight = window.innerWidth / 2 - 660 / 2 + "px";
-	}
+	};
 };
