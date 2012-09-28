@@ -3,19 +3,34 @@
 	<head>
 		<title></title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
 		<link rel="icon" href="../img/16.png" sizes="16x16" type="img/png"/>
 		<link rel="icon" href="../img/48.png" sizes="48x48" type="img/png"/>
 		<link rel="icon" href="../img/128.png" sizes="128x128" type="img/png"/>
+
 		<link rel="stylesheet" href="../css/application.css" type="text/css"/>
-		<script type="text/javascript" src="../js/dataLoad.js"></script>
-		<script type="text/javascript" src="../js/dataSave.js"></script>
+
+		<!-- https://github.com/eligrey/FileSaver.js -->
+		<script type="text/javascript" src="../js/FileSaver.js"></script>
+
+		<script type="text/javascript" src="../js/dataIO.js"></script>
 		<script type="text/javascript" src="../js/determineStatistics.js"></script>
-		<script type="text/javascript" src="../js/drawWindow.js"></script>
 		<script type="text/javascript" src="../js/localizeApplication.js"></script>
 		<script type="text/javascript" src="../js/optionsApply.js"></script>
+		<script type="text/javascript" src="../js/application.js"></script>
 	</head>
-	<body onload="localizeApplication();optionsApply();drawWindow();dataLoad();editor.focus();determineStatistics();" onkeyup="dataSave();determineStatistics();" onresize="drawWindow();">
+	<body>
 		<div id="main"><textarea id="editor"></textarea></div>
-		<div id="footer"><p id="statistics"><span id="wordtag"></span><span id="wordcount"></span><span id="linetag"></span><span id="linecount"></span><span id="charactertag"></span><span id="charactercount"></span></p></div>
+		<div id="footer">
+			<div id="buttons">
+				<div class="filebutton" id="load">
+					<input id="load_input" type="file" />
+				</div>
+				<div class="filebutton" id="save"> &nbsp; </div>
+			</div>
+			<div id="statistics">
+				<span id="wordtag"></span><span id="wordcount"></span><span id="linetag"></span><span id="linecount"></span><span id="charactertag"></span><span id="charactercount"></span>
+			</div>
+		</div>
 	</body>
 </html>

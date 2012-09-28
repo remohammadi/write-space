@@ -3,9 +3,6 @@ function localizeOptions() {
 	document.querySelector("#name").innerHTML = chrome.i18n.getMessage("name");
 	document.querySelector("#optionslabel").innerHTML = chrome.i18n.getMessage("options");
 	document.querySelector("#editorwidthlabel").innerHTML = chrome.i18n.getMessage("editorwidth");
-	document.querySelector("#pixelslabel1").innerHTML = chrome.i18n.getMessage("pixels");
-	document.querySelector("#verticalpaddinglabel").innerHTML = chrome.i18n.getMessage("verticalpadding");
-	document.querySelector("#pixelslabel2").innerHTML = chrome.i18n.getMessage("pixels");
 	document.querySelector("#backgroundcolorlabel").innerHTML = chrome.i18n.getMessage("backgroundcolor");
 	document.querySelector("#fontcolorlabel").innerHTML = chrome.i18n.getMessage("fontcolor");
 	document.querySelector("#fontfamilylabel").innerHTML = chrome.i18n.getMessage("fontfamily");
@@ -14,8 +11,4 @@ function localizeOptions() {
 	document.querySelector("#displayfooterlabel").innerHTML = chrome.i18n.getMessage("displayfooter");
 	document.querySelector("#savebutton").innerHTML = chrome.i18n.getMessage("save");
 	document.querySelector("#resetbutton").innerHTML = chrome.i18n.getMessage("resettodefault");
-	document.querySelector("#importexportlabel").innerHTML = chrome.i18n.getMessage("importexport");
-	document.querySelector("#importlabel").innerHTML = chrome.i18n.getMessage("import");
-	document.querySelector("#exportlabel").innerHTML = chrome.i18n.getMessage("export");
-	document.querySelector("#exportfilebutton").innerHTML = chrome.i18n.getMessage("exportfilebutton");
 };

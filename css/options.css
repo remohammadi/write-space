@@ -38,7 +38,3 @@ div.controls {
 #savebutton {
 	font-weight:bold;
 }
-
-#exportlabel, #exportfilebutton {
-	display:none;
-}

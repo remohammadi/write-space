@@ -13,33 +13,30 @@ html {
 body {
 	height:100%;
 	width:100%;
+	background:#2e3436;
 }
 
 #main {
 	height:100%;
 	width:100%;
-	display:block;
-	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	padding-top:0px;
 	padding-bottom:0px;
+	margin: 0 auto;
 }
 
 #editor {
 	height:100%;
 	width:100%;
-	display:block;
-	-webkit-box-sizing:border-box;
+	font-size:100%;
 	box-sizing:border-box;
-	padding-left:0px;
-	padding-right:0px;
+	padding: 0 0.4em 2.5em;
 	outline:none;
 	resize:none;
 	border:0;
-	background:#000000;
+	background:#000;
 	color:#B9B9B9;
 	font-family:monospace;
-	font-size:12pt;
 	line-height:1.47em;
 }
 
@@ -48,24 +45,65 @@ body {
 }
 
 #footer {
-	height:1.47em;
+	height:2em;
 	width:100%;
 	display:block;
 	border-top-width:1px;
 	border-top-style:solid;
 	border-top-color:#B9B9B9;
-	line-height:1.47em;
 	-webkit-user-select:none;
-	user-select:none;
 	cursor:default;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+	background:#2e3436;
+	opacity: 0.9;
+	color: #eee;
 }
 
 #statistics {
-	display:block;
-	color:#B9B9B9;
-	width:660px;
-	margin:0 auto;
+	float: right;
 	font-family:monospace;
 	font-size:12pt;
 	font-weight:bold;
+	padding: 0.2em 1em;
+}
+
+#buttons {
+	float: left;
+	padding: 0.2em;
+	margin-left: 0.3em;
+}
+#buttons>div {
+	cursor: default;
+	border-radius: 4px;
+}
+#buttons>div:hover {
+	background-color: #725000;
+}
+.filebutton {
+	float: left;
+	position: relative;
+	width: 1.7em;
+	height: 1.7em;
+	margin: 0 0.2em;
+}
+.filebutton input[type="file"] {
+	opacity: 0;
+	width: 1.8em;
+	height: 1.8em;
+}
+#load {
+	background: url(../img/load.png) no-repeat center center;
+}
+#load input[type="file"] {
+	z-index: 10;
+	cursor: pointer;
+}
+#save {
+	background: url(../img/save.png) no-repeat center center;
+}
+#save input[type="file"] {
+	z-index: 11;
 }
